@@ -2,7 +2,7 @@
 
 # 9. Return checklist
 
-Planned return: **Tuesday 25 August 2026**. If you need longer, tell us before
+Planned return: **Thursday 27 August 2026**. If you need longer, tell us before
 that date. An extension is not a problem, only a surprise is. We're planning
 our own work around the robot's availability, so an approximate date helps.
 
