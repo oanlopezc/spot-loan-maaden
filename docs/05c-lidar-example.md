@@ -61,18 +61,36 @@ have everything except possibly Tkinter.
 
 ## Running it
 
-You need to be on the robot's WiFi, with credentials in your environment:
+Be on the robot's WiFi, then:
 
 ```bash
-export BOSDYN_CLIENT_USERNAME=maaden
-export BOSDYN_CLIENT_PASSWORD='...'      # shared in person
-
 cd examples/velodyne_client
 python3 client.py 192.168.80.3
 ```
 
+**It will ask for your username and password when it starts.** Enter `maaden`
+and the password shared in person. Nothing needs to be configured beforehand.
+
 A plot window opens and updates as point clouds arrive. Close the window to
 stop.
+
+### If it does not ask
+
+The SDK looks for credentials in this order, and only prompts if it gets to the
+end:
+
+1. an existing authentication token
+2. the `BOSDYN_CLIENT_USERNAME` and `BOSDYN_CLIENT_PASSWORD` environment variables
+3. a command line prompt
+
+So if it never asks, those environment variables are set somewhere, most likely
+in your `~/.bashrc`. That is fine and often convenient, but it means the program
+is using whichever account is in the environment rather than the one you
+expected. To force the prompt for one run:
+
+```bash
+env -u BOSDYN_CLIENT_USERNAME -u BOSDYN_CLIENT_PASSWORD python3 client.py 192.168.80.3
+```
 
 ## What you should see
 
@@ -89,7 +107,8 @@ rather than at your setup.
 |---|---|
 | `ModuleNotFoundError: tkinter` | install `python3-tk` |
 | Connection refused or timeout | not on the robot's WiFi, or wrong IP |
-| Authentication error | check the two environment variables above |
+| Authentication error | wrong username or password. Username is `maaden`, lowercase |
+| `Stdin is not a tty and no askpass specified` | you ran it somewhere without an interactive terminal, such as from an IDE run button or a script. Run it from a real terminal, or set the two environment variables |
 | Version or serialisation errors | wrong SDK version. Pin `bosdyn-client==4.1.1` |
 | Service not found | the point cloud service is not running, so the lidar may be unpowered or unmounted |
 | Window opens then closes instantly | matplotlib backend problem. Confirm the file still says `TkAgg` |

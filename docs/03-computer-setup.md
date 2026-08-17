@@ -47,15 +47,38 @@ python3 -m pip install open3d==0.18.0
 
 ## Credentials
 
-The SDK reads these environment variables directly, so you never need to put a
-password in your source:
+**By default you do not need to configure anything.** The SDK examples call
+`bosdyn.client.util.authenticate()`, which prompts for a username and password
+at the terminal when you run them. Enter `maaden` and the password shared in
+person.
+
+That helper tries, in order:
+
+1. an existing authentication token
+2. the `BOSDYN_CLIENT_USERNAME` and `BOSDYN_CLIENT_PASSWORD` environment variables
+3. a command line prompt, if stdin is an interactive terminal
+
+The prompt is the normal path and the one we would suggest, because it keeps
+the password out of your shell configuration and out of your history.
+
+### Optional: skip the prompt
+
+If you are automating something, or you are tired of typing it, set the two
+variables and the SDK will use them instead:
 
 ```bash
 export BOSDYN_CLIENT_USERNAME=maaden
 export BOSDYN_CLIENT_PASSWORD='...'      # shared in person
 ```
 
-Add them to your `~/.bashrc` if you'd rather not retype them.
+Two things to know if you do. Once these are set, **programs stop asking**, so
+they will quietly use whatever account is in the environment. And if you put
+them in `~/.bashrc`, the password sits in a plain text file.
+
+There is also a third case: if stdin is not a terminal, for example when
+running from an IDE's run button or a cron job, the SDK cannot prompt and will
+fail with `Stdin is not a tty`. That is when the environment variables are the
+right answer.
 
 > Please don't hardcode the password into scripts. We learned this the hard
 > way. The SDK logs the full authentication request at `DEBUG` level, so a
