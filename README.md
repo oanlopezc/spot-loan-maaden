@@ -2,7 +2,7 @@
 
 Everything you need to start using Spot, in the order you'll need it.
 
-**Loan period:** 18 to 27 August 2026 · **Use:** within KAUST · **Robot:** KAUST Equipment ID 14290358 (Asset 3011119)
+**Loan period:** 18 to 27 August 2026 · **Use:** within KAUST · **Robot:** KAUST Equipment ID 14290358 (Asset 3011119).
 
 > **Passwords are not in this repository.** They are shared in person. Your
 > username on both the robot and Spot CORE is **`maaden`**.
@@ -51,19 +51,14 @@ Full detail in [Using Spot with the controller](docs/02-controller.md).
 These are the only requests that really matter to us:
 
 1. **Do not change the WiFi SSID, WiFi password, or IP configuration.** This is the one change that would leave us unable to reach the robot.
-2. **Tell us before changing firmware.** Current versions are in [docs/07-versions.md](docs/07-versions.md). Rolling Spot back is not always straightforward, and our Spot CORE integration is tied to the present combination, so we would rather help than have it become a problem at return time.
-3. **If anything breaks, contact us** rather than attempting a repair.
-
-You are welcome to unmount the payload or use it partially. Please reassemble it as delivered before the return.
+2. **If anything breaks, contact us** rather than attempting a repair.
+3. You are welcome to unmount the payload or use it partially. Please reassemble it as delivered before the return.
 
 ---
 
 ## Contact
 
-**Omar Lopez.** Reach me any time, including out of hours, for anything at all:
-faults, questions, or something in this guide that turns out to be wrong.
-
-If you can give us one named contact on your side, we'll each know who to call.
+omar.lopezcamargo@kaust.edu.sa
 
 ---
 
