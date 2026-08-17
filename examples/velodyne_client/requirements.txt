@@ -1,6 +1,21 @@
--f ../../../prebuilt
-bosdyn-client >= 3.1
+# Dependencies for the velodyne_client lidar example.
+#
+# Modified from the Boston Dynamics original so that a plain
+#   python3 -m pip install -r requirements.txt
+# works outside the SDK source tree. See docs/05c-lidar-example.md.
+#
+# Changes from the original:
+#   - dropped "-f ../../../prebuilt", a relative path that only resolves
+#     inside the Spot SDK tree and fails once this folder is copied out
+#   - pinned bosdyn-client to 4.1.1 to match this robot; the original said
+#     ">= 3.1", which resolves to 5.x and will not work against 4.1.1
+#   - removed PyQt5, because client.py uses matplotlib's TkAgg backend
+
+bosdyn-client==4.1.1
 
 matplotlib
 numpy
-PyQt5
+
+# TkAgg needs Tkinter, which pip cannot provide. It ships with most Python
+# installations. On Ubuntu, if it is missing:
+#     sudo apt install python3-tk

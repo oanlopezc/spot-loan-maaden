@@ -21,10 +21,9 @@ matplotlib.use('TkAgg')      # upstream ships 'Qt5agg'
 
 Consequences:
 
-- **You do not need PyQt5**, even though `requirements.txt` lists it and the
-  Boston Dynamics README in the same folder tells you to install it. That
-  README is the original and we left it untouched; where it disagrees with this
-  page, this page is the one that matches the code.
+- **You do not need PyQt5**, even though the Boston Dynamics README in the same
+  folder tells you to install it. That README is the original and we left it
+  untouched; where it disagrees with this page, this page matches the code.
 - **You do need Tkinter.** It ships with most Python installations. On Ubuntu,
   if it is missing: `sudo apt install python3-tk`
 
@@ -33,21 +32,29 @@ known to work. Please do not change it back without a reason.
 
 ## Installing
 
-Do **not** run `pip install -r requirements.txt` directly. The first line of
-that file is `-f ../../../prebuilt`, a relative path that only resolves inside
-the Spot SDK source tree. Outside it, the install fails or reaches for the
-wrong place. We left the file as-is so the example stays a faithful copy.
-
-Install the dependencies explicitly instead:
-
 ```bash
-# Pinned to the robot's version. See docs/03-computer-setup.md for why.
-python3 -m pip install bosdyn-client==4.1.1
-python3 -m pip install matplotlib numpy
+cd examples/velodyne_client
+python3 -m pip install -r requirements.txt
 ```
 
-Note that `requirements.txt` says `bosdyn-client >= 3.1`, which would happily
-install 5.x. This robot runs **4.1.1**, so pin it.
+That is all. We tested it in a clean virtual environment and it installs
+`bosdyn-client 4.1.1`, `matplotlib`, and `numpy` with no further steps.
+
+`requirements.txt` is the one file here we edited, because the Boston Dynamics
+original does not work outside the SDK source tree. Three changes:
+
+| original | why it was changed |
+|---|---|
+| `-f ../../../prebuilt` | a relative path that only resolves inside the SDK tree. Once this folder is copied out, the install fails or looks in the wrong place |
+| `bosdyn-client >= 3.1` | resolves to 5.x, which will not work against a 4.1.1 robot. Now pinned to `==4.1.1` |
+| `PyQt5` | not used. `client.py` runs the TkAgg backend |
+
+**Tkinter is the one thing pip cannot install for you.** It ships with most
+Python builds. If you get `ModuleNotFoundError: tkinter`:
+
+```bash
+sudo apt install python3-tk
+```
 
 If you already followed [Setting up your computer](03-computer-setup.md), you
 have everything except possibly Tkinter.
