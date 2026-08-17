@@ -1,0 +1,4 @@
+# Credentials are never committed — they are shared in person.
+.env
+*credentials*
+*password*
