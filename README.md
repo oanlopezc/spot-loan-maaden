@@ -1,8 +1,8 @@
-# Spot — Loan Guide for the Maaden Group
+# Spot-Loan Guide for the Maaden Group
 
 Everything you need to start using Spot, in the order you'll need it.
 
-**Loan period:** 18 – 25 August 2026 · **Use:** within KAUST · **Robot:** KAUST Equipment ID 14290358 (Asset 3011119)
+**Loan period:** 18 – 27 August 2026 · **Use:** within KAUST · **Robot:** KAUST Equipment ID 14290358 (Asset 3011119)
 
 > **Passwords are not in this repository.** They are shared in person. Your
 > username on both the robot and Spot CORE is **`maaden`**.
