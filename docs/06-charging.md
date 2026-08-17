@@ -56,4 +56,4 @@ revive it.
 
 ---
 
-[← Payloads and GXP](05-payloads-gxp.md) · [Back to contents](../README.md) · [Next: Versions →](07-versions.md)
+[← The GXP in depth](05b-gxp-in-depth.md) · [Back to contents](../README.md) · [Next: Versions →](07-versions.md)

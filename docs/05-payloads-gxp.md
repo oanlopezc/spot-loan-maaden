@@ -39,6 +39,18 @@ rail is the hard ceiling, and it is shared. A Hovermap plus the VLP-16 plus the
 CORE may not all fit within it. Worth totting up beforehand rather than
 discovering it as a brownout mid-mission.
 
+> **Two things that catch people out**, both explained in
+> [The GXP in depth](05b-gxp-in-depth.md):
+>
+> 1. Four interlock loops in the payload connector must stay continuous. Break
+>    one and motor power cuts instantly, so the robot sits down and the symptom
+>    looks like a robot fault rather than a wiring mistake.
+> 2. Pin 7 carries a 1 Hz Pulse Per Second signal at 5 ppm. If you are running
+>    SLAM, that is your hardware time sync, and it is easy to miss.
+
+**Read [The GXP in depth](05b-gxp-in-depth.md) before designing a harness or
+mounting the Emesent equipment.**
+
 ## Registering a payload
 
 Spot needs to know about a payload's mass and where it sits, or its balance and
@@ -72,4 +84,4 @@ integration later, and we'd rather learn from you than repeat the work.
 
 ---
 
-[← Spot CORE](04-spot-core.md) · [Back to contents](../README.md) · [Next: Charging →](06-charging.md)
+[← Spot CORE](04-spot-core.md) · [Back to contents](../README.md) · [Next: The GXP in depth →](05b-gxp-in-depth.md)
