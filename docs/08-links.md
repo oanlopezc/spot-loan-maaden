@@ -6,7 +6,7 @@
 
 | link | what it's for |
 |---|---|
-| [Spot 101](https://support.bostondynamics.com/s/spot/spot-101) | the beginner course — controller, battery, first walk |
+| [Spot 101](https://support.bostondynamics.com/s/spot/spot-101) | the beginner course: controller, battery, first walk |
 | [Get Started with Spot](https://support.bostondynamics.com/s/spot/getting-started) | unboxing through first drive |
 | [Boston Dynamics Support Home](https://support.bostondynamics.com/) | everything else |
 
@@ -36,8 +36,8 @@ we'll sort out access.*
 | [Python examples index](https://dev.bostondynamics.com/python/examples/README.html) | what's in the examples folder |
 
 > **A documentation trap.** `dev.bostondynamics.com` serves the **latest**
-> docs — 5.1.4 at the time of writing — while this robot runs **4.1.1**. Most
-> of it still applies, but if something in the docs doesn't exist on the robot,
+> docs, 5.1.4 at the time of writing, while this robot runs **4.1.1**. Most of
+> it still applies, but if something in the docs doesn't exist on the robot,
 > that's why. For exact 4.1.1 material, read the markdown inside the
 > [v4.1.1 tag](https://github.com/boston-dynamics/spot-sdk/tree/v4.1.1) under
 > `docs/`, which is the same content at the right version.

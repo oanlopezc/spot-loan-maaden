@@ -3,7 +3,7 @@
 # 4. Connecting to Spot CORE
 
 Spot CORE is the payload computer mounted on the robot. Use it when code needs
-to run onboard — continuous logging, sensor capture, or anything that must keep
+to run onboard: continuous logging, sensor capture, or anything that must keep
 working when your laptop walks away.
 
 ## Your account
@@ -53,7 +53,7 @@ If that fails with a permission error on `~/.ssh`, fix the ownership once:
 ssh -t -p 20022 maaden@192.168.80.3 'sudo chown -R maaden:maaden ~/.ssh && sudo chmod 700 ~/.ssh'
 ```
 
-*(This caught us out too — the directory can be created root-owned.)*
+*(This caught us out too. The directory can be created root-owned.)*
 
 ## What's on it
 
@@ -66,8 +66,8 @@ ssh -t -p 20022 maaden@192.168.80.3 'sudo chown -R maaden:maaden ~/.ssh && sudo 
 
 **Ubuntu 18.04 is end-of-life**, so `apt` repositories are limited and many
 modern Python wheels won't install. If you need a newer Python, install a
-standalone build in your home directory rather than replacing the system one —
-replacing it breaks the Boston Dynamics services.
+standalone build in your home directory rather than replacing the system one.
+Replacing it breaks the Boston Dynamics services.
 
 ## Copying files
 
@@ -81,7 +81,7 @@ Or with the config alias: `scp myscript.py spot-core:~/`
 ## A request
 
 Please keep your work inside `/home/maaden`. The `spot` account holds our
-project files — you have `sudo` and could read them, but we'd appreciate you
+project files. You have `sudo` and could read them, but we'd appreciate you
 leaving that account alone.
 
 Likewise, please don't change the CORE's network configuration. It's reachable

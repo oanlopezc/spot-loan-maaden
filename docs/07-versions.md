@@ -9,7 +9,7 @@ talk to us first.
 
 | component | version | notes |
 |---|---|---|
-| **Spot (robot)** | **4.1.1** | the number that matters — pin your SDK to it |
+| **Spot (robot)** | **4.1.1** | the number that matters. Pin your SDK to it |
 | **Spot CORE** | **3.0** (Legacy) | Ubuntu 18.04.5 LTS, kernel 4.15 |
 | **Controller / tablet** | **4.1.1** | matched to the robot |
 
@@ -21,7 +21,7 @@ talk to us first.
 |---|---|
 | KAUST Equipment ID | 14290358 |
 | KAUST Asset | 3011119 |
-| Payload | Spot EAP — VLP-16, Spot CORE, Spot GXP |
+| Payload | Spot EAP: VLP-16, Spot CORE, Spot GXP |
 | Mounting | 4× rail mount kit |
 | Batteries | 2 |
 | Charger | 1, with power / Spot / battery cables |
@@ -40,7 +40,7 @@ SSID and WiFi password are on the sheet shared in person.
 
 ## About changing firmware
 
-You're free to change versions if your work needs it — we only ask that you
+You're free to change versions if your work needs it. We only ask that you
 **tell us first**, for two practical reasons:
 
 1. **Downgrades aren't always reversible.** Getting back to 4.1.1 afterwards
@@ -50,8 +50,8 @@ You're free to change versions if your work needs it — we only ask that you
    3.0 is matched to robot 4.1.1. Moving the robot forward without the CORE can
    leave the payload computer unable to talk to it.
 
-If you need a newer version, message us and we'll work out the safest route —
-this is an offer of help, not an obstacle.
+If you need a newer version, message us and we'll work out the safest route.
+This is an offer of help, not an obstacle.
 
 ## Version mismatch symptoms
 

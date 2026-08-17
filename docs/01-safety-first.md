@@ -8,8 +8,8 @@ here saves a bad afternoon.
 ## Before the first power-on
 
 - **Know where the E-Stop is.** On the controller it is the large red button on
-  the touchscreen. Pressing it cuts motor power immediately — the robot will
-  drop to the ground, which is intended and does not damage it.
+  the touchscreen. Pressing it cuts motor power immediately, so the robot will
+  drop to the ground. That is intended and does not damage it.
 - **Clear 2 metres around the robot** before commanding it to stand.
 - **Nobody within arm's reach while it walks.** Spot's legs move faster than
   people expect, and it does not know where your feet are.
@@ -27,7 +27,7 @@ here saves a bad afternoon.
 
 ## Water and dust
 
-Spot is IP54 — it tolerates dust and light rain. It is **not** submersible.
+Spot is IP54, so it tolerates dust and light rain. It is **not** submersible.
 Avoid puddles deep enough to reach the leg joints, and don't power-wash it.
 
 ## If something goes wrong

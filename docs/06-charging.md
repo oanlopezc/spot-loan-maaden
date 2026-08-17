@@ -3,7 +3,7 @@
 # 6. Charging and batteries
 
 Batteries are the most expensive consumable on the robot and the easiest thing
-to degrade through inattention. This page is short — please read it anyway.
+to degrade through inattention. This page is short. Please read it anyway.
 
 ## What you have
 
@@ -44,15 +44,15 @@ Don't hot-swap. Power the robot down first.
 
 ## If a battery misbehaves
 
-Swelling, unusual heat, physical damage, or a refusal to charge — stop using it
+Swelling, unusual heat, physical damage, or a refusal to charge: stop using it
 immediately, put it somewhere non-flammable, and contact us. Don't try to
 revive it.
 
 ## Official documentation
 
-- [Spot Battery and Charging System](https://support.bostondynamics.com/s/article/Spot-Battery-and-Charging-System-72069) — the main reference
+- [Spot Battery and Charging System](https://support.bostondynamics.com/s/article/Spot-Battery-and-Charging-System-72069), the main reference
 - [Spot 101: Battery & Charging](https://support.bostondynamics.com/s/spot/spot-101)
-- [Spot Battery Shipping Guidance](https://support.bostondynamics.com/s/article/Spot-Battery-Shipping-Guidance-49921) — relevant if the robot travels
+- [Spot Battery Shipping Guidance](https://support.bostondynamics.com/s/article/Spot-Battery-Shipping-Guidance-49921), relevant if the robot travels
 
 ---
 

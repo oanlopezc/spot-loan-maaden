@@ -10,24 +10,24 @@ For controlling Spot from a laptop with Python, rather than the controller.
 > latest.**
 >
 > The current public SDK is 5.x. A 5.x client talking to a 4.1.1 robot will
-> fail in confusing ways — some calls work, others raise version errors, and
-> the messages rarely say "version mismatch". `pip install bosdyn-client` with
-> no version gives you 5.x. Pin it.
+> fail in confusing ways: some calls work, others raise version errors, and the
+> messages rarely say "version mismatch". `pip install bosdyn-client` with no
+> version gives you 5.x. Pin it.
 >
-> The same applies to documentation: `dev.bostondynamics.com` now serves the
+> The same applies to documentation. `dev.bostondynamics.com` now serves the
 > **5.1.4** docs by default. See [Useful links](08-links.md) for how to get the
 > 4.1.1 versions.
 
 ## Install
 
-Tested on Ubuntu. A virtual environment of some kind is strongly recommended —
-conda below, but `venv` or `uv` work equally well.
+Tested on Ubuntu. A virtual environment of some kind is strongly recommended.
+The example below uses conda, but `venv` or `uv` work equally well.
 
 ```bash
 conda create --name spot python=3.10
 conda activate spot
 
-# Pinned to match the robot — do not drop the ==4.1.1
+# Pinned to match the robot. Do not drop the ==4.1.1
 python3 -m pip install \
     bosdyn-client==4.1.1 \
     bosdyn-mission==4.1.1 \
@@ -58,7 +58,7 @@ export BOSDYN_CLIENT_PASSWORD='...'      # shared in person
 Add them to your `~/.bashrc` if you'd rather not retype them.
 
 > Please don't hardcode the password into scripts. We learned this the hard
-> way — the SDK logs the full authentication request at `DEBUG` level, so a
+> way. The SDK logs the full authentication request at `DEBUG` level, so a
 > debug log becomes a plaintext password file. If you enable DEBUG logging,
 > don't keep the logs.
 
@@ -87,16 +87,16 @@ git checkout v4.1.1
 
 Good starting points inside it:
 
-- `python/examples/hello_spot` — connect, stand, sit
-- `python/examples/wasd` — drive from the keyboard, well commented
-- `python/examples/get_image` — pull camera frames
-- `python/examples/estop` — **worth reading**, explains the E-Stop model
+- `python/examples/hello_spot`, connect, stand, sit
+- `python/examples/wasd`, drive from the keyboard, well commented
+- `python/examples/get_image`, pull camera frames
+- `python/examples/estop`, **worth reading**, explains the E-Stop model
 
 ## The E-Stop, in software
 
 Any program that moves the robot needs an E-Stop endpoint, and the robot will
 refuse to move without one. This is deliberate. Keep the physical controller in
-reach even when driving from a laptop — a script that hangs is much less
+reach even when driving from a laptop. A script that hangs is much less
 alarming when someone is holding the stop button.
 
 ## Reference
