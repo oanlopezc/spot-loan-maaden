@@ -29,6 +29,7 @@ Everything you need to start using Spot, in the order you'll need it.
 |---|---|---|
 | 6 | **[Payloads and the GXP](docs/05-payloads-gxp.md)** | mounting the Emesent equipment |
 | 6b | **[The GXP in depth](docs/05b-gxp-in-depth.md)** | before designing a harness. Power budget, interlocks, PPS time sync |
+| 6c | **[Checking the lidar](docs/05c-lidar-example.md)** | a working example that plots VLP-16 point clouds live |
 | 7 | **[Current versions](docs/07-versions.md)** | before changing anything. **Please read** |
 | 8 | **[Useful links](docs/08-links.md)** | whenever you're stuck |
 | 9 | **[Return checklist](docs/09-return-checklist.md)** | the day before handing the robot back |

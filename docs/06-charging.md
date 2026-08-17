@@ -56,4 +56,4 @@ revive it.
 
 ---
 
-[← The GXP in depth](05b-gxp-in-depth.md) · [Back to contents](../README.md) · [Next: Versions →](07-versions.md)
+[← Checking the lidar](05c-lidar-example.md) · [Back to contents](../README.md) · [Next: Versions →](07-versions.md)

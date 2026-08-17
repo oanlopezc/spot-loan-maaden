@@ -140,4 +140,4 @@ versions, but see [Useful links](08-links.md) if you need the exact 4.1.1 pages.
 
 ---
 
-[← Payloads and the GXP](05-payloads-gxp.md) · [Back to contents](../README.md) · [Next: Charging →](06-charging.md)
+[← Payloads and the GXP](05-payloads-gxp.md) · [Back to contents](../README.md) · [Next: Checking the lidar →](05c-lidar-example.md)
